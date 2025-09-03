@@ -7,7 +7,7 @@ from src.post_processor import process_solution
 if __name__ == "__main__":
     with open('config/config.yaml', 'r') as f:
         config = yaml.safe_load(f)
-    sets, params = load_data(config['data_path'])
+    sets, params = load_data(config)
     milp = MILPModel(sets, params)
     solution = solve_model(milp.model, config)
     results = process_solution(solution, params)

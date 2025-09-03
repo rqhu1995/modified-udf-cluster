@@ -1,0 +1,11 @@
+network_size: 50  # Integer: Number of bike stations |V|
+num_clusters: 3   # Integer: Number of vehicles/clusters |C|
+t_load: 2.0       # Float: Time for loading/unloading a bike (in minutes)
+T: 120.0          # Float: Time budget for repositioning (in minutes)
+station_data_path: data/station_data.csv  # String: Path to station inventory CSV
+travel_times_path: data/duration_matrix.csv  # String: Path to travel time matrix CSV
+delta_marginal_path: data/delta_udf_marginal.csv  # String: Path to precomputed Delta_ij^m CSV
+surplus_ratio: 0.4
+deficit_ratio: 0.5
+random_state: 42
+time_limit: 7200
